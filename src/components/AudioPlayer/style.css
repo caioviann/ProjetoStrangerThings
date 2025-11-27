@@ -1,0 +1,52 @@
+.play-music-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px 25px;
+    background: linear-gradient(135deg, rgba(232, 17, 35, 0.9), rgba(0, 242, 234, 0.9));
+    border: 2px solid rgba(232, 17, 35, 1);
+    border-radius: 25px;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 
+        0 0 20px rgba(232, 17, 35, 0.6),
+        0 0 40px rgba(0, 242, 234, 0.4);
+    animation: pulse-button 2s ease-in-out infinite;
+    font-family: 'ITC Benguiat', serif;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    transition: all 0.3s ease;
+}
+
+.play-music-button:hover {
+    transform: scale(1.1);
+    box-shadow: 
+        0 0 30px rgba(232, 17, 35, 0.8),
+        0 0 60px rgba(0, 242, 234, 0.6);
+}
+
+@keyframes pulse-button {
+    0%, 100% {
+        box-shadow: 
+            0 0 20px rgba(232, 17, 35, 0.6),
+            0 0 40px rgba(0, 242, 234, 0.4);
+    }
+    50% {
+        box-shadow: 
+            0 0 30px rgba(232, 17, 35, 0.8),
+            0 0 60px rgba(0, 242, 234, 0.6);
+    }
+}
+
+/* Responsividade para celular */
+@media screen and (max-width: 480px) {
+    .play-music-button {
+        bottom: 15px;
+        right: 15px;
+        padding: 12px 20px;
+        font-size: 0.9em;
+    }
+}
+

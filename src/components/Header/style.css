@@ -1,0 +1,25 @@
+.img{
+    height: 230px;
+    width: 420px;
+    max-width: 100%;
+    border-radius: 15px;
+    object-fit: contain;
+}
+
+/* Responsividade para celular */
+@media screen and (max-width: 768px) {
+    .img {
+        height: auto;
+        width: 90%;
+        max-width: 350px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .img {
+        width: 95%;
+        max-width: 280px;
+        margin-bottom: 8px;
+    }
+}

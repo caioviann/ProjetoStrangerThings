@@ -1,0 +1,30 @@
+.img-cards{
+    width: 250px;                  /* Largura fixa para as imagens */
+    height: 370px;                  /* Altura ajustada proporcionalmente */
+    border-radius: 15px;           /* Borda arredondada para os cards */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    object-fit: cover;             /* Garante que a imagem preencha o espaço */
+}
+
+/* Responsividade para celular */
+@media screen and (max-width: 768px) {
+    .img-cards {
+        width: 180px;
+        height: 270px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .img-cards {
+        width: 140px;
+        height: 210px;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .img-cards {
+        width: 120px;
+        height: 180px;
+    }
+}

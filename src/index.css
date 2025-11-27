@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'ITC Benguiat';
+  src: url('./assets/ITCBenguiatStdBookCn.OTF') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'ITC Benguiat', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden; /* Previne scroll horizontal indesejado */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

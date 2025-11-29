@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./style.css";
 import Header from "../Header/index.jsx";
 import ContainerImage from "../ContainerImage/index.jsx";
@@ -6,6 +7,13 @@ import AudioPlayer from "../AudioPlayer/index.jsx";
 import music from "../../assets/music.mp3";
 
 function PrincipalContainer() {
+  const [mostrarMensagem, setMostrarMensagem] = useState(false);
+
+  const handleClick = () => {
+    console.log("Botão clicado!");
+    setMostrarMensagem(true);
+  };
+
   return (
     <div className="container">
       <AudioPlayer 
@@ -57,6 +65,18 @@ function PrincipalContainer() {
       <p className="text-surpresa">
         E isso é só o começo... Haverá mais surpresas à frente! 🎁✨
       </p>
+      <button 
+        className="botao-surpresa" 
+        onClick={handleClick}
+        type="button"
+      >
+        Clique aqui
+      </button>
+      {mostrarMensagem && (
+        <p className="mensagem-especial">
+          Achou que era só isso, não tá faltando algo pra deixar essa data mais especial? Então olhe pra trás
+        </p>
+      )}
     </div>
   );
 }
